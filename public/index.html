@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <title>Site de démo</title>
     <link rel="stylesheet" href="style.css">
@@ -7,7 +7,7 @@
 <body>
     <div class="header">
         <h1 style="color: #777;">Bienvenue sur notre site</h1>
-        <img src="https://picsum.photos/200">
+        <img src="https://picsum.photos/200" alt="">
     </div>
 
     <div onclick="location.href='#contact'" class="btn">Contact</div>
@@ -16,19 +16,24 @@
         <p>Lorem ipsum dolor sit amet...</p>
         
         <form>
-            <input type="text" name="email">
+            <label for="email">Email :</label>
+            <input type="text" name="email" id="email">
             <input type="submit" value="Envoyer">
         </form>
 
         <table>
+            <thead>
             <tr>
-                <td>Produit</td>
-                <td>Prix</td>
+                <th scope="col">Produit</th>
+                <th scope="col">Prix</th>
             </tr>
+            </thead>
+            <tbody>
             <tr>
                 <td>Livre</td>
                 <td>20€</td>
             </tr>
+            </tbody>
         </table>
     </div>
 
